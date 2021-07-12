@@ -5,15 +5,53 @@ from django.contrib.auth import authenticate, login, logout
 from .models import Profile,User
 from django.contrib.auth.decorators import login_required
 from .decorators import unauthenticated_user
+from asgiref.sync import sync_to_async,async_to_sync
+import os
+import asyncio 
 
 
 
+# google text to speech module
+from gtts import gTTS
 
+
+def welcome(name):  # for welcome speech
+    # print('inside welcome')
+    text = f" Indoctrination maa hajurlai swagat chha, {name}!.  Ma hajurlai k sahayog garna sakchhu ?"
+    voice = gTTS(text=text, lang='hi',slow=False)
+    voice.save("welcome.mp3")  # saves voice as welcome.mp3
+    os.system("mpg321 welcome.mp3")  # plays that mp3 file
+    voice.stop()
+
+@sync_to_async
+def is_first_time(request): # converts sync to async , since request.session cannot be made async
+    return request.session['first_time_entry']
+
+@sync_to_async # since request.profile.name cannot be converted to async
+def get_name(request):
+    return request.user.profile.name
+
+@sync_to_async
 @login_required(login_url='loginPage')
-def home(request):
-    return render(request, 'home.html')
+@async_to_sync
+async def home(request):
+    
+    name = await get_name(request)
+    first_time_entry = await is_first_time(request) #identifying that the use has entered home page first time after login, this session is created in login view
+  
+    if first_time_entry:
+        a_welcome = sync_to_async(welcome)
+        asyncio.create_task(a_welcome(name))
+        request.session['first_time_entry'] = False             # after first time welcome speech, setting first time entry session to false, so that welcome speech don't run again and again
 
 
+    
+    context = {
+        'name':name,
+    }
+    # await task1
+    a_render = sync_to_async(render) #converting render method to async then calling it as coroutine
+    return await a_render(request,'home.html',context)
 
 @unauthenticated_user
 def registerPage(request):
@@ -40,8 +78,7 @@ def registerPage(request):
         return render(request,'registerPage.html',context)
 
 
-
-@unauthenticated_user
+@unauthenticated_user    # if unauthenticated then send user login page
 def loginPage(request):
     
         if request.method == "POST":
@@ -52,6 +89,7 @@ def loginPage(request):
 
             if user is not None:
                 login(request, user)
+                request.session['first_time_entry']=True
                 return redirect('home')
 
             else:
@@ -59,6 +97,7 @@ def loginPage(request):
                 return redirect('loginPage')
 
         return render(request,'loginPage.html')
+
 
 
 
