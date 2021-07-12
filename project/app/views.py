@@ -9,6 +9,12 @@ from asgiref.sync import sync_to_async,async_to_sync
 import os
 import asyncio 
 
+# from pynput import keyboard
+
+
+
+
+
 
 # google text to speech module
 from gtts import gTTS
@@ -21,6 +27,7 @@ def welcome(name):  # for welcome speech
     voice.save("welcome.mp3")  # saves voice as welcome.mp3
     os.system("mpg321 welcome.mp3")  # plays that mp3 file
     voice.stop()
+     
 
 @sync_to_async  #since request.user is synchronous only
 def is_blind(request):
@@ -41,12 +48,49 @@ def get_name(request):
     return request.user.profile.name
 
 
+"""
+def listenChoice(request):
+    def on_press(key):
+        if key == keyboard.Key.esc:
+            return False  # stop listener
+        try:
+            k = key.char  # single-char keys
+            print(k)
+            if(k == '1'):
+                print('pressed 1')
+                
+                return 'profile.html'
+        
+
+        except:
+            k = key.name  # other keys
+        if k in ['space']:  # keys of interest
+            # self.keys.append(k)  # store it in global-like variable
+            print('Key pressed: ' + k)
+            return False  # stop listener; remove this if want more keys
+    
+
+    listener = keyboard.Listener(on_press=on_press)
+    listener.start()  # start to listen on a separate thread
+    listener.join()  # remove if main thread is polling self.keys
+
+    return on_press
+"""
+@sync_to_async
+def blindnav():
+    text = "please enter 1, to go to home. enter 2, to go to course section. enter 3, to go to blog section. enter 4, to go to live tutor. enter 5, to know more about us. enter 6, to go to contact us"
+    voice = gTTS(text=text, lang='hi',slow=False)
+    voice.save("blindnav.mp3")  # saves voice as welcome.mp3
+    os.system("mpg321 blindnav.mp3")  # plays that mp3 file
+    voice.stop()
+
+
 @sync_to_async
 @login_required(login_url='loginPage')
 @async_to_sync
 async def home(request):
     
-    
+
     name = await get_name(request)
     first_time_entry = await is_first_time(request) #identifying that the use has entered home page first time after login, this session is created in login view
   
@@ -55,15 +99,25 @@ async def home(request):
         task1 = asyncio.create_task(a_welcome(name))
         request.session['first_time_entry'] = False             # after first time welcome speech, setting first time entry session to false, so that welcome speech don't run again and again
 
+    blind = await is_blind(request)
+    print(blind)
+    if blind:
+        asyncio.create_task(blindnav())
 
-
+    # a_listenChoice = sync_to_async(listenChoice)
+    # task = asyncio.create_task(a_listenChoice(request))
     
     context = {
         'name':name,
+        'blind':blind,
     }
     # await task1
     a_render = sync_to_async(render) #converting render method to async then calling it as coroutine
     return await a_render(request,'home.html',context)
+
+
+
+
 
 @unauthenticated_user
 def registerPage(request):
@@ -192,4 +246,9 @@ def course3(request):
 
 
 def subject_detail(request):
+
+    
     return render(request,'subject.html')
+
+
+
