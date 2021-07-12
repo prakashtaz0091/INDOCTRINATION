@@ -7,7 +7,7 @@ Courses
 
 
 {% block links %}
-  <link rel="stylesheet" href="{% static 'app/css/course.css' %}">
+<link rel="stylesheet" href="{% static 'app/css/course.css' %}">
 {% endblock links %}
 
 
@@ -15,15 +15,19 @@ Courses
 
 <link rel="stylesheet" href="{% static 'app/css/nav-footer.css' %}">
 
-<!-- icon -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
-<!-- fonts -->
-<link href='https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="css/course.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-
+<style type="text/css">
+    a {
+        text-decoration: none;
+        border-bottom: none;
+        color: #5cb85c;
+    }
+</style>
 <!-- navbar -->
 
 <section style="color: #fff;">
@@ -80,7 +84,8 @@ Courses
                 <div class="card single_post">
                     <div class="body">
                         <div class="img-post">
-                            <img class="d-block img-fluid" src="{% static 'app/images/theory.jpg' %}" alt="First slide" style="width:100%;">
+                            <img class="d-block img-fluid" src="{% static 'app/images/theory.jpg' %}" alt="First slide"
+                                style="width:100%;">
                         </div>
                         <h1>NORMAL</h1>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
@@ -103,7 +108,7 @@ Courses
                         <ul class="comment-reply list-unstyled">
                             <li class="row clearfix">
                                 <div class="icon-box col-md-2 col-4"><img class="img-fluid img-thumbnail"
-                                    src="{% static 'app/images/man.png' %}" alt="Awesome Image"></div>
+                                        src="{% static 'app/images/man.png' %}" alt="Awesome Image"></div>
                                 <div class="text-box col-md-10 col-8 p-l-0 p-r0">
                                     <h5 class="m-b-0">Commenter 1</h5>
                                     <p>Thank you for such cool platform for learning</p>
@@ -115,7 +120,7 @@ Courses
                             </li>
                             <li class="row clearfix">
                                 <div class="icon-box col-md-2 col-4"><img class="img-fluid img-thumbnail"
-                                    src="{% static 'app/images/girl.jpg' %}" alt="Awesome Image"></div>
+                                        src="{% static 'app/images/girl.jpg' %}" alt="Awesome Image"></div>
                                 <div class="text-box col-md-10 col-8 p-l-0 p-r0">
                                     <h5 class="m-b-0">Commenter 2</h5>
                                     <p>Great</p>
@@ -185,15 +190,16 @@ Courses
                                     <p class="m-b-0 ">1.) Brief details about Quantam Physics.</p>
                                     <span>Jul 12, 2021</span>
                                     <div class="img-post">
-                                        <a href="#"> <img src="{% static 'app/images/quantum.jpg' %}" alt="Awesome Image"
-                                                title="click me"></a>
+                                        <a href="#"> <img src="{% static 'app/images/quantum.jpg' %}"
+                                                alt="Awesome Image" title="click me"></a>
                                     </div>
                                 </div>
                                 <div class="single_post">
                                     <p class="m-b-0">2.) What Programming Language You Should Learn in 2021 ?</p>
                                     <span>Jun 8, 2021</span>
                                     <div class="img-post">
-                                        <a href="#"><img src="{% static 'app/images/pro.png' %}" alt="Awesome Image" title="click me"></a>
+                                        <a href="#"><img src="{% static 'app/images/pro.png' %}" alt="Awesome Image"
+                                                title="click me"></a>
                                     </div>
                                 </div>
                             </div>
