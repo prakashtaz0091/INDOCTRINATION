@@ -189,3 +189,7 @@ def course2(request):
 
 def course3(request):
     return render(request,'course3.html')
+
+
+def subject_detail(request):
+    return render(request,'subject.html')

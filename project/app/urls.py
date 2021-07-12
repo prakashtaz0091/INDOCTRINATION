@@ -13,5 +13,6 @@ urlpatterns = [
     path('courses/',views.courses,name='courses'),
     path('course/',views.course2,name='course2'),
     path('course_detail/',views.course3,name='course3'),
+    path('subject_detail/',views.subject_detail,name='subjectDetail'),
 
 ]
