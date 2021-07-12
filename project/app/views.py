@@ -10,7 +10,6 @@ import os
 import asyncio 
 
 
-
 # google text to speech module
 from gtts import gTTS
 
@@ -181,3 +180,6 @@ def createProfile(request):   # creating profile after the registration done
 
 def courses(request):
     return render(request,'courses.html')
+
+
+
