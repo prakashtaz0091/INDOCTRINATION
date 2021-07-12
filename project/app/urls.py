@@ -11,5 +11,6 @@ urlpatterns = [
     path('user/createProfile/',views.createProfile,name='createProfile'),
 
     path('courses/',views.courses,name='courses'),
+    path('course/',views.course2,name='course2')
 
 ]

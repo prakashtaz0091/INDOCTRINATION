@@ -183,3 +183,5 @@ def courses(request):
 
 
 
+def course2(request):
+    return render(request,'course2.html')
