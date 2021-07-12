@@ -1,3 +1,4 @@
+from os import name
 from django.urls import path
 from . import views
 
@@ -8,5 +9,7 @@ urlpatterns = [
     path('logoutUser/',views.logoutUser,name='logoutUser'),
     path('profile',views.profile,name='profile'),
     path('user/createProfile/',views.createProfile,name='createProfile'),
+
+    path('courses/',views.courses,name='courses'),
 
 ]

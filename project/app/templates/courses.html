@@ -1,10 +1,124 @@
 {% extends "base.html" %}
 
 {% block title %}
-  Courses
+Courses
 {% endblock title %}
 
 
 {% block content %}
-  
+{% load static %}
+<link rel="stylesheet" href="{% static 'app/css/nav-footer.css' %}">
+
+<!-- icon -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+<!-- fonts -->
+<link href='https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+
+
+<!-- navbar -->
+
+<section style="color: #fff;">
+    <nav class="blend">
+        <ul>
+            <a href="#"><img src="{% static 'app/images/incoc.png' %}" class="ima" title="INDOCTRINATION"></a>
+
+            <li><i class="fa fa-home fa-2x text-dark"></i><a href="">Home</a></li>
+            <li><i class="fa fa-rss fa-2x text-dark"></i><a href="#">News Blog</a></li>
+            <li><i class="fa fa-server fa-2x text-dark"></i><a href="#">Live Tutors</a></li>
+            <li>
+                <div class="dropdown"><i class="fa fa-wheelchair-alt fa-2x text-dark"></i>
+                    <a class="dropbtn" style="color:#5cb85c;">Disabled ?? &darr;</a>
+                    <div class="dropdown-content">
+                        <a href="#">Blind <i class="fa fa-low-vision h5 text-dark" style="font-size: 15px;"></i></a>
+                        <a href="#">Deaf <i class="fa fa-deaf h5 text-dark"></i></a>
+                        <a href="#">Dumb <i class="fa fa-volume-off h5 text-dark"></i></a>
+                        <a href="#">Other <i class="bi bi-three-dots h5 text-dark"></i></a>
+                    </div>
+                </div>
+            </li>
+
+            <li><i class="fa fa-users fa-2x text-dark"></i><a href="#">About</a></li>
+            <li><i class="fa fa-phone fa-2x text-dark"></i><a href="#">Contact-Us</a></li>
+            <li><i class="fa fa-user fa-2x text-dark"></i><a href="{% url 'profile' %}">Profile</a></li>
+        </ul>
+    </nav>
+
+</section>
+
+
+
+
+
+<!--footer-->
+<footer class="page_footer">
+    <div class="site-section">
+        <div class="container">
+
+            <div class="cta d-block d-md-flex align-items-center px-5">
+                <div>
+                    <h2 class="mb-0">Ready for <strong class="h1 text-danger">CHANGE ?</strong></h2>
+                    <h3 class="text-dark">Let's get started!</h3>
+                </div>
+                <div class="ml-auto">
+                    <a href="#" class="btn btn-outline-warning rounded font-weight-bolder py-3 px-5">Get Started &rarr;
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-sm">
+                    <a href="#" class="footer-logo">INDOCTRINATION</a>
+
+                </div>
+                <div class="col-sm">
+                    <h3>Sources</h3>
+                    <ul class="list-unstyled links">
+                        <li><a href="#">Premium</a></li>
+                        <li><a href="#">Standard</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <h3>Organization</h3>
+                    <ul class="list-unstyled links">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <h3>Further Information</h3>
+                    <ul class="list-unstyled links">
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Follow us</h3>
+                    <ul class="list-unstyled social">
+                        <li><a href="#" style="background-color:blue;"><span
+                                    class="fa fa-facebook fa-2x text-white"></span></a>
+                        </li>
+                        <li><a href="#" style="background-color:white;"><span
+                                    class="fa fa-twitter fa-2x text-primary"></span></a>
+                        </li>
+                        <li><a href="#" style="background-color:orangered;"><span
+                                    class="fa fa-google-plus fa-2x text-white"></span></a></li>
+                        <li><a href="#" style="background-color:white;"><span
+                                    class="fa fa-github fa-2x text-dark"></span></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
 {% endblock content %}

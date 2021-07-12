@@ -176,3 +176,8 @@ def createProfile(request):   # creating profile after the registration done
     }
 
     return render(request,'createProfile.html',context)
+
+
+
+def courses(request):
+    return render(request,'courses.html')
