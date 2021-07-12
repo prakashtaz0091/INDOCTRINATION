@@ -5,15 +5,19 @@ Profile
 {% endblock title %}
 
 {% block content %}
-<div class="container">
+<div class="container-fluid bg-dark">
 
     <div class="row">
         <div class="col-md-8" style="min-height: 100vh;">
-
+            <div class="container text-success py-5 my-5 border rounded">
+                <h1> Your Profile appears here
+                </h1>
+            </div>
         </div>
         <div class="col-md-3">
-
-            <button class="btn btn-success">Logout</button>
+            <div class="container text-success py-5 my-5 text-center ">
+                <a href="{% url 'logoutUser' %}" type="button" class="btn btn-outline-success">Logout</a>
+            </div>
         </div>
     </div>
 
