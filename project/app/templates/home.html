@@ -32,7 +32,32 @@
 
 <body style="background-color:#171717;">
 
+    {% if blind == True %}
 
+      <script type="text/javascript">
+
+        window.addEventListener('keydown', function (e) {
+          if (e.key == 1) {
+            window.location.replace("{% url 'home' %}");
+          }
+          if (e.key == 2) {
+            window.location.replace("{% url 'courses' %}");
+          }
+          if (e.key == 3) {
+            window.location.replace("{% url 'home' %}");
+          }
+          if (e.key == 4) {
+            window.location.replace("{% url 'home' %}");
+          }
+          if (e.key == 5) {
+            window.location.replace("{% url 'home' %}");
+          }
+          if (e.key == 6) {
+            window.location.replace("{% url 'home' %}");
+          }
+        }, false);
+      </script>
+    {% endif %}
 
     <!-- navbar -->
     <section style="color: #fff;">
