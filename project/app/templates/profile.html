@@ -10,8 +10,87 @@ Profile
     <div class="row">
         <div class="col-md-8" style="min-height: 100vh;">
             <div class="container text-success py-5 my-5 border rounded">
-                <h1> Your Profile appears here
-                </h1>
+                <h1>Hey, {{name}} Welcome</h1>
+
+            <hr>
+
+                {% if userinfo == True %}
+                <div class="container-fluid ">
+                    <h3>Name : {{name}}</h3>
+                    <h3>Username : {{username}}</h3>
+                    <h3>Address : {{address}}</h3>
+                    <h3>Phone No : {{phone_no }}</h3>
+                    <h3>Level : {{level }}</h3>
+                    <h3>Disability : {{disability}}</h3>
+
+                    <div>
+                        <div class="jumbotron">
+                            <h1>{{name}}'s Bio</h1>
+                            {% if bioLen > 0 %}
+                            <p>{{bio}}</p>
+
+                            {% else %}
+                            <p>"Empty Bio!", Please write something about Yourself </p>
+
+                            {% endif %}
+                        </div>
+                    </div>
+
+                </div>
+
+                {% endif %}
+
+
+
+                <!-- Update Bio Modal -->
+                <div class="modal fade" id="updateBioModal" tabindex="-1" aria-labelledby="updateBioModal"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="updateBioModalLabel">Hello! {{name}}</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <form action="" method="post">
+                                {% csrf_token %}
+                                <div class="modal-body">
+                                    <label for="bio">
+                                        <h3>Write about Yourself</h3>
+                                    </label>
+                                    <div class="form-group text-center">
+                                        <textarea name="bio" id="bio" cols="40" rows="10"></textarea>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-success">Update your Bio</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Log Out Modal -->
+                <div class="modal fade" id="logOutModal" tabindex="-1" aria-labelledby="logOutModal" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="logOutModalLabel">{{name}}, Are you sure!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <a href="{% url 'logoutUser' %}" type="button" class="btn btn-primary">Logout</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-md-3">

@@ -7,4 +7,6 @@ urlpatterns = [
     path('loginPage/',views.loginPage,name='loginPage'),
     path('logoutUser/',views.logoutUser,name='logoutUser'),
     path('profile',views.profile,name='profile'),
+    path('user/createProfile/',views.createProfile,name='createProfile'),
+
 ]
