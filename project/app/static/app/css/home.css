@@ -39,7 +39,7 @@ body {
     background: #fff;
     box-shadow: 5px 5px 5px 0px skyblue;
     border-radius: 4px;
-    transition: all 0.5s ease;
+    transition: all 7s ease;
 }
 .wrimagecard .fa{
   position: relative;
@@ -74,3 +74,163 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
 /* ------second section end-------*/
 
 
+
+
+
+.testimolialbegin {
+  text-align: center;
+  color: #fff;
+  font: normal normal 24px / 1.25 "Raleway", Helvetica, Arial, Verdana, sans-serif;
+}
+
+q{
+
+    color: black;
+
+}
+body p {
+  max-width: 60ch;
+  margin: 0 auto 2em;
+}
+
+.testimonial-slider {
+   display: block;
+   width: 100%;
+   height: 50%;
+   margin-top: 30px;
+}
+
+.testimonial-slider ul.slider {
+   display: block;
+   list-style: none;
+   padding: 0;
+   position: relative;
+   display: inline-block;
+   width: 100%;
+   height: 350px;
+   overflow: hidden;
+   margin: 0 auto;
+}
+
+
+
+.testimonial-slider ul.slider li {
+    position: absolute;
+    display: block;
+    width: 100%;
+    opacity: 0;
+    margin: 0 auto;
+}
+.testimonial-slider ul.slider li:nth-child(1) {
+    opacity: 1;
+
+    -webkit-animation: fade-animation-1 15s infinite;
+            animation: fade-animation-1 15s infinite;
+}
+.testimonial-slider ul.slider li:nth-child(2) {
+    -webkit-animation: fade-animation-2 15s infinite;
+            animation: fade-animation-2 15s infinite;
+}
+.testimonial-slider ul.slider li:nth-child(3) {
+    -webkit-animation: fade-animation-3 15s infinite;
+            animation: fade-animation-3 15s infinite;
+}
+.testimonial-slider ul.slider li:nth-child(4) {
+    -webkit-animation: fade-animation-4 15s infinite;
+            animation: fade-animation-4 15s infinite;
+}
+
+.testimonial-slider q {
+   display: inline-block;
+   font: normal 4vw / 1.25 "Raleway", Helvetica, Arial, Verdana, sans-serif;
+   letter-spacing: .5pt;
+   text-shadow: 0 5px 10px rgba(0,0,0,.1);
+   max-width: 35ch;
+}
+
+.testimonial-slider .source {
+    margin-top: 25px;
+    color: black;
+    font: italic 400 30px / 1.35 "Raleway", Helvetica, Arial, Verdana, sans-serif;
+}
+
+/* KEYFRAME DECLARATIONS */
+@keyframes fade-animation-1 {
+    0%, 25%, 100% {
+        opacity:0
+    }
+    3%, 22% {
+        opacity: 1;
+    }
+}
+@keyframes fade-animation-2 {
+    0%, 25%, 50%, 100% {
+        opacity:0
+    }
+    28%, 47% {
+        opacity: 1;
+    }
+}
+@keyframes fade-animation-3 {
+    0%, 50%, 75%, 100% {
+        opacity:0
+    }
+    53%, 72% {
+        opacity: 1;
+    }
+}
+@keyframes fade-animation-4 {
+    0%, 75%, 100% {
+        opacity:0
+    }
+    78%, 97% {
+        opacity: 1;
+    }
+}
+
+/* ------testimonial  close-------*/
+/* ------parallex-------*/
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+
+
+#parallax-world-of-ugg h1 {font-family:'Oswald', sans-serif; font-size:24px; font-weight:400; text-transform: uppercase; color:black; padding:0; margin:0;}
+#parallax-world-of-ugg h2 {font-family:'Oswald', sans-serif; font-size:70px; letter-spacing:10px; text-align:center; color:black; font-weight:400; text-transform:uppercase; z-index:10; opacity:.9;}
+#parallax-world-of-ugg h3 {font-family:'Oswald', sans-serif; font-size:14px; line-height:0; font-weight:400; letter-spacing:8px; text-transform: uppercase; color:black;}
+#parallax-world-of-ugg p {font-family:'Source Sans Pro', sans-serif; font-weight:400; font-size:14px; line-height:24px; color: black;}
+.first-character {font-weight:400; float: left; font-size: 84px; line-height: 64px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: 'Source Sans Pro', sans-serif;}
+
+.sc {color: #3b8595;}
+.ny {color: #3d3c3a;}
+.atw {color: #c48660;}
+
+
+#parallax-world-of-ugg .title {background: white; padding: 60px; margin:0; text-align:center;}
+#parallax-world-of-ugg .title h1 {font-size:35px; letter-spacing:8px;}
+
+#parallax-world-of-ugg .block {background: #171717; padding: 60px; width:100%; text-align:justify;}
+
+#parallax-world-of-ugg .parallax-one {padding-top: 70px; padding-bottom: 50px; overflow: hidden; position: relative;width: 100%; 
+ background-image: url('../images/image1.jpg'); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+
+
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {padding: 40px; width:620px;
+  }
+
+}
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {padding: 30px; width:420px;}
+  #parallax-world-of-ugg h2 {font-size:30px;}
+  #parallax-world-of-ugg .block {padding: 30px;}
+ 
+}
+  #parallax-world-of-ugg .parallax-one{padding-top:100px; padding-bottom:100px;}
+}
+@media screen and (max-width: 479px) {
+  #parallax-world-of-ugg .block {padding: 30px 15px; width:290px;}
+}
+
+
+/* ------parallex  close-------*/
