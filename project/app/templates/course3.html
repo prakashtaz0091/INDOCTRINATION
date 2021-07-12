@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+<head>
+  <!-- Required meta tags -->
+  <link rel="shortcut icon" href="{% static 'favicon.png' %}" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'app/css/nav-footer.css' %}">
+  <link rel="stylesheet" href="{% static 'app/css/course3.css' %}">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Course 3</title>
+</head>
+
+<body style="background-color:#171717;">
+  <style type="text/css">
+    a {
+      text-decoration: none;
+      border-bottom: none;
+    }
+  </style>
+  <!-- navbar -->
+  <section style="color: #fff;">
+    <nav class="blend">
+      <ul>
+        <a href="#"><img src="{% static 'app/images/incoc.png' %}" class="ima" title="INDOCTRINATION"></a>
+
+        <li><i class="fa fa-home fa-2x text-dark"></i><a href="">Home</a></li>
+        <li><i class="fa fa-file-pdf-o fa-2x text-dark"></i><a href="{% url 'courses' %}">Courses</a></li>
+        <li><i class="fa fa-rss fa-2x text-dark"></i><a href="#">News Blog</a></li>
+        <li><i class="fa fa-server fa-2x text-dark"></i><a href="#">Live Tutors</a></li>
+        <li>
+          <div class="dropdown"><i class="fa fa-wheelchair-alt fa-2x text-dark"></i>
+            <a class="dropbtn">Disabled ?? &darr;</a>
+            <div class="dropdown-content">
+              <a href="#">Blind <i class="fa fa-low-vision h5 text-dark" style="font-size: 15px;"></i></a>
+              <a href="#">Deaf <i class="fa fa-deaf h5 text-dark"></i></a>
+              <a href="#">Dumb <i class="fa fa-volume-off h5 text-dark"></i></a>
+              <a href="#">Other <i class="bi bi-three-dots h5 text-dark"></i></a>
+            </div>
+          </div>
+        </li>
+
+        <li><i class="fa fa-users fa-2x text-dark"></i><a href="#">About</a></li>
+        <li><i class="fa fa-phone fa-2x text-dark"></i><a href="#">Contact-Us</a></li>
+        <li><i class="fa fa-user fa-2x text-dark"></i><a href="{% url 'profile' %}">Profile</a></li>
+      </ul>
+    </nav>
+
+  </section>
+
+  <section class="content-item" id="blog-item">
+    <div class="container" style="background-color:white;">
+      <div class="row">
+        <!-- BLOG POST - START -->
+        <div class="col-sm-8 blog">
+          <h2 class="text-success">B.Sc. Computer Science and Information technology | Tribhuvan University</h2>
+
+          <p class="h5"><img class="img-responsive pull-left" src="{% static 'app/images/csi.jpg' %}" alt="">B.Sc. CSIT program affiliated to
+            Tribhuvan University (TU) is a four year Bachelor Degree program conducted over 8 semesters. Students
+            gradually pass out one semester and are promoted to the next semester after taking qualifying exam at each
+            semester. The program was launched by TU to generate IT graduates so that they can fulfill the overwhelming
+            demand of IT professionals both within the country and worldwide.</p>
+          <p class="h3" style="font-weight: bold;">Objectives of B.Sc. Computer Science and Information technology: </p>
+          <ul>
+            <li>The objective of the B.Sc. CSIT program is to enable students know the fundamental theories, knowledge
+              and skill sets of computer science and Information Technology.</li>
+            <li>B.Sc. CSIT, a four years degree course, generate IT graduates to fulfill the growing demand of computing
+              professionals in IT market.</li>
+            <li>B.Sc. CSIT programs leans more towards programming field thus enabling students to develop profound
+              knowledge in software field. They can pursue the path to become software programmers, software system
+              analysis, software consultants.</li><br>
+            <li>B.Sc. CSIT program enables students to build their knowledge in hardware and networking to an extensive
+              level.</li>
+            <li>Courses in B.Sc. CSIT program provide knowledge and skills to solve various types of computer and IT
+              related problems.</li>
+            <li>Another objective of B.Sc. CSIT degree program is to develop the capacity of the students to bring the
+              impact in the field of business sector through IT.</li>
+
+          </ul>
+          <p class="h3" style="font-weight:bolder;">Click the button to view all the BSc. CSIT collages in Nepal.</p>
+
+
+          <p>
+            <a class="btn btn-success btn-lg" data-bs-toggle="collapse" href="#collapseExample" role="button"
+              aria-expanded="false" aria-controls="collapseExample">
+              Lists of all the BSc. CSIT collage in Nepal &darr;
+            </a>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              <ul class="list-group">
+                <a href="">
+                  <li class="list-group-item active">Name Of Collages.</li>
+                </a>
+                <a href="">
+                  <li class="list-group-item">Mechi Multiple Campus (MMC)</li>
+                </a>
+                <a href="">
+                  <li class="list-group-item">Patan Multiple Campus.</li>
+                </a>
+                <a href="">
+                  <li class="list-group-item">Butwal Multiple Campus.</li>
+                </a>
+                <a href="">
+                  <li class="list-group-item">Mahendra Multiple Campus.</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+          <h3>Eligibility</h3>
+          <p class="h5">The candidate applying for B.Sc. CSIT program must have secured a minimum of second division in
+            their +2 or equivalent OR should have secured at least C in all subjects in Grade 11 and Grade 12 by taking
+            Physics and Mathematics of 100 marks.</p>
+          <h3>Job Prospectus</h3>
+          <p class="h5">The B.Sc. CSIT graduates have a prosperous career opportunity at the different government,
+            non-government, private, and public organizations, like software companies, telecommunications, computer
+            networking companies, etc. especially as a:</p>
+          <ul>
+            <li>Software Developer</li>
+            <li>Web Developer</li>
+            <li>Network Administrator</li>
+            <li>Database Administrator</li>
+            <li>IT Manager/Officer</li>
+            <li>Cryptographer</li>
+            <li>Ergonomics Program Designer</li>
+            <li>System Analyst</li>
+            <li>Artificial Intelligence Specialist</li>
+            <li>Database Operator</li>
+            <li>Technical Writer</li>
+            <li>And Many More &#128561;</li>
+
+
+          </ul>
+          <hr style="color:green;">
+          <img src="{% static 'app/images/syll.jpg' %}" class="img-responsive" style="width:100%;height: auto;">
+        </div>
+
+
+        <!-- BLOG POST - END -->
+
+        <!-- SIDEBAR - START -->
+        <div class="col-sm-4">
+          <div class="sidebar">
+            <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+              <a class="navbar-brand" href="#">Syllabus</a>
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="#scrollspyHeading1">First</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#scrollspyHeading2">Second</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">Dropdown</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                    <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+
+                    <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+                    <li><a class="dropdown-item" href="#scrollspyHeading6">Sixth</a></li>
+                    <li><a class="dropdown-item" href="#scrollspyHeading7">Seventh</a></li>
+                    <li><a class="dropdown-item" href="#scrollspyHeading8">Eighth</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
+              tabindex="0">
+              <h4 id="scrollspyHeading1"></h4>
+
+              <div class="box categories">
+                <h3>1st Semester</h3>
+                <ul class="list-unstyled">
+                  <li><a href="subject.html">IT (Intro to Information Technology)</a></li>
+                  <li><a href="subject.html">Digital Logic</a></li>
+                  <li><a href="subject.html">C Programming</a></li>
+                  <li><a href="subject.html">Physics</a></li>
+                  <li><a href="subject.html">Mathamatics-I</a></li>
+                </ul>
+              </div>
+              <h4 id="scrollspyHeading2"></h4>
+              <div class="box categories">
+                <h3>2nd Semester</h3>
+                <ul class="list-unstyled">
+                  <li><a href="subject.html">Discrete Structure</li>
+                  <li><a href="subject.html">Mathametics- II</a></li>
+                  <li><a href="subject.html">Microprocessor</a></li>
+                  <li><a href="subject.html">Object Oriented Programming</a></li>
+                  <li><a href="subject.html">Statistics- I</a></li>
+                </ul>
+              </div>
+              <h4 id="scrollspyHeading3"></h4>
+              <div class="box categories">
+                <h3>3rd Semester</h3>
+                <ul class="list-unstyled">
+                  <li><a href="subject.html">Computer Architecture</a></li>
+                  <li><a href="subject.html">Computer Graphics</a></li>
+                  <li><a href="subject.html">Statistics-II</a></li>
+                  <li><a href="subject.html">Data structure and Algorithm</a></li>
+                  <li><a href="subject.html">Numerical Method</a></li>
+                </ul>
+              </div>
+              <h4 id="scrollspyHeading4"></h4>
+              <div class="box categories">
+                <h3>4th Semester</h3>
+                <ul class="list-unstyled">
+                  <li><a href="subject.html">IT (Intro to Information Technology)</a></li>
+                  <li><a href="subject.html">Digital Logic</a></li>
+                  <li><a href="subject.html">C Programming</a></li>
+                  <li><a href="subject.html">Physics</a></li>
+                  <li><a href="subject.html">Maths-I</a></li>
+                </ul>
+              </div>
+              <h4 id="scrollspyHeading5"></h4>
+              <div class="box categories">
+                <h3>5th Semester</h3>
+                <ul class="list-unstyled">
+                  <li><a href="subject.html">IT (Intro to Information Technology)</a></li>
+                  <li><a href="subject.html">Digital Logic</a></li>
+                  <li><a href="subject.html">C Programming</a></li>
+                  <li><a href="subject.html">Physics</a></li>
+                  <li><a href="subject.html">Maths-I</a></li>
+                </ul>
+              </div>
+              <h4 id="scrollspyHeading6"></h4>
+              <div class="box categories">
+                <h3>6th Semester</h3>
+                <ul class="list-unstyled">
+                  <li><a href="subject.html">IT (Intro to Information Technology)</a></li>
+                  <li><a href="subject.html">Digital Logic</a></li>
+                  <li><a href="subject.html">C Programming</a></li>
+                  <li><a href="subject.html">Physics</a></li>
+                  <li><a href="subject.html">Maths-I</a></li>
+                </ul>
+              </div>
+              <h4 id="scrollspyHeading7"></h4>
+              <div class="box categories">
+                <h3>7th Semester</h3>
+                <ul class="list-unstyled">
+                  <li><a href="subject.html">IT (Intro to Information Technology)</a></li>
+                  <li><a href="subject.html">Digital Logic</a></li>
+                  <li><a href="subject.html">C Programming</a></li>
+                  <li><a href="subject.html">Physics</a></li>
+                  <li><a href="subject.html">Maths-I</a></li>
+                </ul>
+              </div>
+              <h4 id="scrollspyHeading8"></h4>
+              <div class="box categories">
+                <h3>8th Semester</h3>
+                <ul class="list-unstyled">
+                  <li><a href="subject.html">IT (Intro to Information Technology)</a></li>
+                  <li><a href="subject.html">Digital Logic</a></li>
+                  <li><a href="subject.html">C Programming</a></li>
+                  <li><a href="subject.html">Physics</a></li>
+                  <li><a href="subject.html">Maths-I</a></li>
+                </ul>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <!-- SIDEBAR - END -->
+      </div>
+    </div>
+  </section><br><br><br>
+  <footer class="page_footer">
+    <div class="site-section">
+      <div class="container">
+
+        <div class="cta d-block d-md-flex align-items-center px-5">
+          <div>
+            <h2 class="mb-0">Ready for <strong class="h1 text-danger">CHANGE ?</strong></h2>
+            <h3 class="text-dark">Let's get started!</h3>
+          </div>
+
+        </div>
+        <div class="row">
+
+          <div class="col-sm">
+            <a href="#" class="footer-logo">INDOCTRINATION</a>
+
+          </div>
+          <div class="col-sm">
+            <h3>Sources</h3>
+            <ul class="list-unstyled links">
+              <li><a href="#">Premium</a></li>
+              <li><a href="#">Standard</a></li>
+            </ul>
+          </div>
+          <div class="col-sm">
+            <h3>Organization</h3>
+            <ul class="list-unstyled links">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="col-sm">
+            <h3>Further Information</h3>
+            <ul class="list-unstyled links">
+              <li><a href="#">Terms &amp; Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3>Follow us</h3>
+            <ul class="list-unstyled social">
+              <li><a href="#" style="background-color:blue;"><span class="fa fa-facebook fa-2x text-white"></span></a>
+              </li>
+              <li><a href="#" style="background-color:white;"><span class="fa fa-twitter fa-2x text-primary"></span></a>
+              </li>
+              <li><a href="#" style="background-color:orangered;"><span
+                    class="fa fa-google-plus fa-2x text-white"></span></a></li>
+              <li><a href="#" style="background-color:white;"><span class="fa fa-github fa-2x text-dark"></span></a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
