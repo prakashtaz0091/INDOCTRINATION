@@ -15,8 +15,6 @@ import asyncio
 from gtts import gTTS
 
 
-
-
 def welcome(name):  # for welcome speech
     # print('inside welcome')
     text = f" Indoctrination maa hajurlai swagat chha, {name}!.  Ma hajurlai k sahayog garna sakchhu ?"
@@ -24,6 +22,16 @@ def welcome(name):  # for welcome speech
     voice.save("welcome.mp3")  # saves voice as welcome.mp3
     os.system("mpg321 welcome.mp3")  # plays that mp3 file
     voice.stop()
+
+@sync_to_async  #since request.user is synchronous only
+def is_blind(request):
+    if request.user.profile.disability == "blind":
+        return True
+    else:
+        return False
+
+
+
 
 @sync_to_async
 def is_first_time(request): # converts sync to async , since request.session cannot be made async
@@ -39,14 +47,13 @@ def get_name(request):
 @async_to_sync
 async def home(request):
     
-   
     
     name = await get_name(request)
     first_time_entry = await is_first_time(request) #identifying that the use has entered home page first time after login, this session is created in login view
   
     if first_time_entry:
         a_welcome = sync_to_async(welcome)
-        asyncio.create_task(a_welcome(name))
+        task1 = asyncio.create_task(a_welcome(name))
         request.session['first_time_entry'] = False             # after first time welcome speech, setting first time entry session to false, so that welcome speech don't run again and again
 
 
