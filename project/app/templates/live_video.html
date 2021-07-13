@@ -26,7 +26,6 @@
         <li><i class="fa fa-home fa-2x text-dark"></i><a href="{% url 'home' %}">Home</a></li>
         <li><i class="fa fa-file-pdf-o fa-2x text-dark"></i><a href="{% url 'courses' %}">Courses</a></li>
         <li><i class="fa fa-rss fa-2x text-dark"></i><a href="{% url 'blogPage' %}">News Blog</a></li>
-        <li><i class="fa fa-server fa-2x text-dark"></i><a href="#">Live Tutors</a></li>
         <li>
           <div class="dropdown"><i class="fa fa-wheelchair-alt fa-2x text-dark"></i>
             <a class="dropbtn">Disabled ?? &darr;</a>
@@ -40,7 +39,7 @@
         </li>
 
         <li><i class="fa fa-users fa-2x text-dark"></i><a href="#">About</a></li>
-        <li><i class="fa fa-phone fa-2x text-dark"></i><a href="#">Contact-Us</a></li>
+        <li><i class="fa fa-phone fa-2x text-dark"></i><a href="{% url 'contact' %}">Contact-Us</a></li>
         <li><i class="fa fa-user fa-2x text-dark"></i><a href="{% url 'profile' %}">Profile</a></li>
       </ul>
     </nav>

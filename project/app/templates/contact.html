@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="css/navfooter.css">
-   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'app/css/nav-footer.css' %}">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <meta charset="utf-8">
@@ -15,31 +16,32 @@
             text-decoration: none;
         }
     </style>
-	<section style="color: #fff;">
-   <nav class="blend">
-    <ul>
-        <a href="hackathone.html"><img src="img/incoc.png" class="ima" title="INDOCTRINATION"></a>
-    
-      <li><i class="fa fa-home fa-2x text-dark"></i><a href="hackathone.html">Home</a></li>
-      <li><i class="fa fa-file-pdf-o fa-2x text-dark"></i><a href="course.html">Courses</a></li>
-      <li><i class="fa fa-rss fa-2x text-dark"></i><a href="#">News Blog</a></li>
-      <li><i class="fa fa-server fa-2x text-dark"></i><a href="live_video.html">Live Tutors</a></li>
-      <li>
-       <div class="dropdown"><i class="fa fa-wheelchair-alt fa-2x text-dark"></i>
-  <a  class="dropbtn">Disabled ?? &darr;</a>
-  <div class="dropdown-content">
-    <a href="#">Blind <i class="fa fa-low-vision h5 text-dark" style="font-size: 15px;"></i></a>
-    <a href="#">Deaf  <i class="fa fa-deaf h5 text-dark"></i></a>
-    <a href="#">Dumb  <i class="fa fa-volume-off h5 text-dark"></i></a>
-    <a href="#">Other  <i class="bi bi-three-dots h5 text-dark"></i></a>
-  </div>
-</div>
-    </li>
+  <section style="color: #fff;">
+    <nav class="blend">
+      <ul>
+        <a href="#"><img src="{% static 'app/images/incoc.png' %}" class="ima" title="INDOCTRINATION"></a>
+
+        <li><i class="fa fa-home fa-2x text-dark"></i><a href="">Home</a></li>
+        <li><i class="fa fa-file-pdf-o fa-2x text-dark"></i><a href="{% url 'courses' %}">Courses</a></li>
+        <li><i class="fa fa-rss fa-2x text-dark"></i><a href="{% url 'blogPage' %}">News Blog</a></li>
+        <li><i class="fa fa-server fa-2x text-dark"></i><a href="{% url 'liveTutors' %}">Live Tutors</a></li>
+        <li>
+          <div class="dropdown"><i class="fa fa-wheelchair-alt fa-2x text-dark"></i>
+            <a class="dropbtn">Disabled ?? &darr;</a>
+            <div class="dropdown-content">
+              <a href="#">Blind <i class="fa fa-low-vision h5 text-dark" style="font-size: 15px;"></i></a>
+              <a href="#">Deaf <i class="fa fa-deaf h5 text-dark"></i></a>
+              <a href="#">Dumb <i class="fa fa-volume-off h5 text-dark"></i></a>
+              <a href="#">Other <i class="bi bi-three-dots h5 text-dark"></i></a>
+            </div>
+          </div>
+        </li>
 
         <li><i class="fa fa-users fa-2x text-dark"></i><a href="#">About</a></li>
-          </ul>
-  </nav>
-  
+        <li><i class="fa fa-user fa-2x text-dark"></i><a href="{% url 'profile' %}">Profile</a></li>
+      </ul>
+    </nav>
+
   </section><br>
 <section class="jumbotron text-center">
     <div class="container">
