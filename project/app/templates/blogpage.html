@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog page</title>
+
+    <!-- Font Awesome Icons -->
+    <!-- <link rel="stylesheet" href="./css/all.css"> -->
+    <link rel="stylesheet" href="{% static 'app/css/all.css' %}">
+    
+    
+    <!-- --------- Owl-Carousel ------------------->
+    <!-- <link rel="stylesheet" href="./css/owl.carousel.min.css"> -->
+    <link rel="stylesheet" href="{% static 'app/css/owl.carousel.min.css' %}">
+    
+    <!-- <link rel="stylesheet" href="./css/owl.theme.default.min.css"> -->
+    <link rel="stylesheet" href="{% static 'app/css/owl.theme.default.min.css' %}">
+    
+    <!-- ------------ AOS Library ------------------------- -->
+    <!-- <link rel="stylesheet" href="./css/aos.css"> -->
+    <link rel="stylesheet" href="{% static 'app/css/aos.css' %}">
+    
+    <!-- Custom Style   -->
+    <!-- <link rel="stylesheet" href="./css/Style.css"> -->
+    <link rel="stylesheet" href="{% static 'app/css/Style.css' %}">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+
+  
+    <!----------------------------- Main Site Section ------------------------------>
+
+    <main>
+
+      
+                <h1>INDOCTRINATION</h1>
+                <a href="{% url 'home' %}"><button class="btn">Return To Home</button></a>
+            </div>
+        </section>
+
+        <!------------x----------- Site Title ----------x----------->
+
+        <!-- --------------------- Blog Carousel ----------------- -->
+
+        <section>
+            <div class="blog">
+                <div class="container">
+                    <div class="owl-carousel owl-theme blog-post">
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="{% static 'app/images/Blog-post/covid19.jpg' %}" alt="post-1">
+                            <div class="blog-title">
+                                <h3>EU has hit hits it target of delivering enough corona
+                                    virus vaccines to cover 70 %of adult population
+                                </h3>
+                                <button class="btn btn-blog">Health</button>
+                                <span>2 minutes</span>
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
+                            <img src="{% static 'app/images/Blog-post/schmeichl.jpg' %}" alt="post-1">
+                            <div class="blog-title">
+                                <h3>UEFA has fined €30,000 to English Football Association as 
+                                    supporters caused disturbance and one of them showed laser 
+                                    light to Dennis goalkeeper...</h3>
+                                <button class="btn btn-blog">sports</button>
+                                <span>...</span>
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-left" data-aos-delay="200">
+                            <img src="{% static 'app/images/Blog-post/loksewa.jpg' %}" alt="post-1">
+                            <div class="blog-title">
+                                <h3>आजको गोरखापत्रको लोकसेवा सामाग्री....पढ्नुहोस है</h3>
+                                <button class="btn btn-blog">GK</button>
+                                <span>...</span>
+                        
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="{% static 'app/images/Blog-post/aeroplane.jpg' %}" alt="post-1">
+                            <div class="blog-title">
+                                <h3>Nepal Government has decided to increase the number of International flights.</h3>
+                                <button class="btn btn-blog">Aviation</button>
+                                <span>...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-navigation">
+                        <span class="owl-nav-prev"><i class="fa fa-arrow-left"></i></span>
+                        <span class="owl-nav-next"><i class="fa fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------x---------- Blog Carousel --------x-------- -->
+
+        <!-- ---------------------- Site Content -------------------------->
+
+        <section class="container">
+            <div class="site-content">
+                <div class="posts">
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img src="{% static 'app/images/Blog-post/nepalnetspeed.jpg' %}" class="img" alt="blog1">
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fa fa-user text-black"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fa fa-calendar text-gray"></i>&nbsp;&nbsp;Today,july 13, 2021</span>
+                                <span>2 Commets</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Nepal Ranks 127th for Mobile Speeds, 112th For Fixed Internet Speeds
+                                Internet speed was recorded at 21.05 Mbps and 12.43 Mbps for mobile and fixed broadband, respectively</a>
+                            <p>According to the Speedtest Global Index by Ookla, Nepal has been ranked 112th in fixed internet speed and 127th in mobile internet speed in January 2020.
+
+                                In the fixed internet category, Nepal has surpassed many south Asian countries including Maldives (135), Bhutan (141), Pakistan (155) and Afghanistan (161) while trailing behind India (66), Sri Lanka (91) and Bangladesh (103).
+                                
+                                In the mobile internet category, the nation has surpassed India (128), Bangladesh (131) and Afghanistan (139) and while trailing behind Maldives (61), Sri Lanka (87) and Pakistan (118).
+                                
+                                 
+                            </p>
+                            <button class="btn post-btn">Read More &nbsp; <i class="fa fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img src="{% static 'app/images/Blog-post/tourism.jpg' %}" class="img" alt="blog1">
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fa fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fa fa-calendar text-gray"></i>&nbsp;&nbsp;July 12, 2021</span>
+                                <span>7 Commets</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Shopping in Nepal: 10 Exciting Things To Buy In Nepal For Souvenir
+                                These souvenirs help keep your travel memories fresh for as long as you live.</a>
+                            <p>Nepal is a country of diversified traditions, religions, castes, and culture, where people, despite following
+                                 different beliefs and speaking various languages, live together with peace and harmony.Expanded from the plains
+                                  of Terai to the peaks of the Himalayas,
+                                 Nepal is one of the most beautiful country to live and experience.
+                                  It is the perfect place for an adrenaline rush and a life-changing experience.
+                            </p>
+                            <button class="btn post-btn">Read More &nbsp; <i class="fa fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img src="{% static 'app/images/Blog-post/NTA-logo.jpg' %}" class="img" alt="blog1">
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fa fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fa fa-calendar text-gray"></i>&nbsp;&nbsp;July 11 , 2021</span>
+                                <span>5 Commets</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#"></a>विदेशी र अवैध Mobile हरु साउन महिना पछि Block हुदैछ| यसरी दर्ता गर्नुहोस् NTA मा.
+                            <p>NTA (Nepal Telecommunication Authority), the telecom regulator of Nepal has started 
+                                online registration of mobile phones. To stop illegal phones
+                                 from operating and help people track their lost phones, they have started this registration
+                                  online now. The IMEI registration would also help to discourage the grey phone market in the country.
+
+                                Although it is already illegal to sell and promote grey phones in the market, there is still a
+                                 huge market for such grey phones in Nepal. And it is also very easily available in the market
+                                 , that the shops fell without any fear.
+                            </p>
+                            <button class="btn post-btn">Read More &nbsp; <i class="fa fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img src="{% static 'app/images/Blog-post/sspro.png' %}" class="img" alt="blog1">
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fa fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fa fa-calendar text-gray"></i>&nbsp;&nbsp;July 10 , 2021</span>
+                                <span>12 Commets</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#"> Sharesansar introduces web-based software “SS Pro”</a>
+                            <p>Nepal’s no. 1 stock market news and data portal, sharesansar has introduced a new product for nepalese investors.
+
+                                The web based software named as “SS Pro” consists of many innovative features such as
+                                 demonstrating investors confidence , live charts along with various other features.
+                                
+                                Sharesansar has been the best portal for any stock market related data.
+                                
+                                And now the new product will provide information along with the data,
+                                 such that investors are eased in their decision making.
+                            </p>
+                            <button class="btn post-btn">Read More &nbsp; <i class="fa fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="pagination flex-row">
+                        <a href="#"><i class="fa fa-arrow-left"></i></a>
+                        <a href="#" class="pages">1</a>
+                        <a href="#" class="pages">2</a>
+                        <a href="#" class="pages">3</a>
+                        <a href="#"><i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <aside class="sidebar">
+                    <div class="category">
+                        <h2>Category</h2>
+                        <ul class="category-list">
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="100">
+                                <a href="#">Education</a>
+                                <span>(05)</span>
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="200">
+                                <a href="#">Science & Techonlogy</a>
+                                <span>(02)</span>
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="300">
+                                <a href="#">Share Market</a>
+                                <span>(07)</span>
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="400">
+                                <a href="#">Sports</a>
+                                <span>(04)</span>
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="500">
+                                <a href="#">Health</a>
+                                <span>(03)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="popular-post">
+                        <h2>Popular Post</h2>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="{% static 'app/images/popular-post/noc.jpg' %}" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fa fa-calendar text-gray"></i>&nbsp;&nbsp;January 14,
+                                        2019</span>
+                                    <span>2 Commets</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">Nepal Oil Corporation (NOC) installed Enterprises Resource Planning (ERP) 
+                                    software in order to control oil leakage</a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="300">
+                            <div class="post-image">
+                                <div>
+                                    <img src="{% static 'app/images/popular-post/arc.jpg' %}" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fa fa-calendar text-gray"></i>&nbsp;&nbsp;January 14,
+                                        2019</span>
+                                    <span>2 Commets</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">Breaking: Argentina wins the title of Copa America 2021 after
+                                     winning the final match against Brazil by 1-0 goal score.</a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                            <div class="post-image">
+                                <div>
+                                    <img src="{% static 'app/images/popular-post/see.jpg' %}" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fa fa-calendar text-gray"></i>&nbsp;&nbsp;January 14,
+                                        2019</span>
+                                    <span>2 Commets</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">SEE परीक्षा २०७३ को नतिजा website, SMS, IVR मा प्रकाशन हुने ।</a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="500">
+                            <div class="post-image">
+                                <div>
+                                    <img src="{% static 'app/images/popular-post/ussr.jpg' %}" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fa fa-calendar text-gray"></i>&nbsp;&nbsp;January 14,
+                                        2019</span>
+                                    <span>2 Commets</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">US President Joe Biden vows US "action" over Russian cyber-attacks</a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="600">
+                            <div class="post-image">
+                                <div>
+                                    <img src="{% static 'app/images/popular-post/loksewa1.jpg' %}" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fa fa-calendar text-gray"></i>&nbsp;&nbsp;January 14,
+                                        2019</span>
+                                    <span>2 Commets</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">१५ औ योजना का महत्वपूर्ण तथ्य र तथ्याङ्कहरु चित्रमार्फत पढ्नुहोस....
+                                     Exam को दृष्टि ले अति महत्वपूर्ण हुनसक्छन. ❣️</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsletter" data-aos="fade-up" data-aos-delay="300">
+                        <h2>Indoctination</h2>
+                        <div class="form-element">
+                            <input type="text" class="input-element" placeholder="Email">
+                            <button class="btn form-btn">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="popular-tags">
+                        <h2>Popular Tags</h2>
+                        <div class="tags flex-row">
+                            <span class="tag" data-aos="flip-up" data-aos-delay="100">Software</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="200"> communication and technology</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="300">International</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="400">illustration</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="500">Art and Design</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="600">Geography</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="700">History</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="800">project</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- -----------x---------- Site Content -------------x------------>
+
+    </main>
+
+    <!---------------x------------- Main Site Section ---------------x-------------->
+
+
+    <!-- --------------------------- Footer ---------------------------------------- -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                <h2>About us</h2>
+                <p>Indoctrination is the free online educating
+                     website where one can have an access to almost
+                      every essential materials of academic as well as practical education. </p>
+            </div>
+            <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+                <h2>Indoctrination</h2>
+                <p>Stay update with our latest</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"><span><i class="fa fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+                <h2>Instagram</h2>
+                <div class="flex-row">
+                    <img src="{% static 'app/images/instagram/samanyagyan.jpg' %}" alt="insta1">
+                    <img src="{% static 'app/images/instagram/kp.jpg' %}" alt="insta2">
+                    <img src="{% static 'app/images/instagram/ipo.jpg' %}" alt="insta3">
+                </div>
+                <div class="flex-row">
+                    <img src="{% static 'app/images/instagram/police.jpg' %}" alt="insta4">
+                    <img src="{% static 'app/images/instagram/farm.jpg' %}" alt="insta5">
+                    <img src="{% static 'app/images/instagram/rocket.jpg' %}" alt="insta6">
+                </div>
+            </div>
+            <div class="follow" data-aos="fade-left" data-aos-delay="200">
+                <h2>Follow us</h2>
+                <p>Let us be Social</p>
+                <div>
+                    <i class="fa fa-facebook-f"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+           
+        </div>
+        <div class="move-up">
+            <span><i class="fa fa-arrow-up fa-2x"></i></span>
+        </div>
+    </footer>
+
+    <!-- -------------x------------- Footer --------------------x------------------- -->
+
+    <!-- Jquery Library file -->
+    <!-- <script src="./js/Jquery3.4.1.min.js"></script> -->
+    <script src="{% static 'app/js/Jquery3.4.1.min.js' %}"></script>
+    
+    
+    <!----------- Owl-Carousel js ------------------->
+    <!-- <script src="./js/owl.carousel.min.js"></script> -->
+    <script src="{% static 'app/js/owl.carousel.min.js' %}"></script>
+    
+    <!-------------- AOS js Library  ------------------------- -->
+    <!-- <script src="./js/aos.js"></script> -->
+    <script src="{% static 'app/js/aos.js' %}"></script>
+    
+    <!--Custom Javascript file -->
+    <!-- <script src="./js/main.js"></script> -->
+    <script src="{% static 'app/js/main.js' %}"></script>
+</body>
+
+</html>

@@ -256,3 +256,7 @@ def live_tutors(request):
     return render(request,'live_video.html')
 
 
+def blogPage(request):
+    return render(request,'blogpage.html')
+
+
