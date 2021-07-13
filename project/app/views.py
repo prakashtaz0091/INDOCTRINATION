@@ -252,3 +252,7 @@ def subject_detail(request):
 
 
 
+def live_tutors(request):
+    return render(request,'live_video.html')
+
+
