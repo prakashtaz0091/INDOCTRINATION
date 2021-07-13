@@ -16,5 +16,6 @@ urlpatterns = [
     path('subject_detail/',views.subject_detail,name='subjectDetail'),
     path('live_tutors/',views.live_tutors,name='liveTutors'),
     path('blogPage/',views.blogPage,name='blogPage'),
+    path('contact/',views.contact,name='contact'),
 
 ]

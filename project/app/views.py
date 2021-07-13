@@ -260,3 +260,7 @@ def blogPage(request):
     return render(request,'blogpage.html')
 
 
+def contact(request):
+    return render(request,'contact.html')
+
+
