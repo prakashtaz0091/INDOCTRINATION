@@ -90,6 +90,10 @@ def blindnav():
 @async_to_sync
 async def home(request):
     
+    blind = await is_blind(request)
+    print(blind)
+    if blind:
+        return redirect(blindPage)
 
     name = await get_name(request)
     first_time_entry = await is_first_time(request) #identifying that the use has entered home page first time after login, this session is created in login view
@@ -99,10 +103,6 @@ async def home(request):
         task1 = asyncio.create_task(a_welcome(name))
         request.session['first_time_entry'] = False             # after first time welcome speech, setting first time entry session to false, so that welcome speech don't run again and again
 
-    blind = await is_blind(request)
-    print(blind)
-    if blind:
-        return redirect(blindPage)
 
     # a_listenChoice = sync_to_async(listenChoice)
     # task = asyncio.create_task(a_listenChoice(request))
