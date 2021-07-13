@@ -42,9 +42,9 @@ Courses
                 <div class="dropdown"><i class="fa fa-wheelchair-alt fa-2x text-dark"></i>
                     <a class="dropbtn" style="color:#5cb85c;">Disabled ?? &darr;</a>
                     <div class="dropdown-content">
-                        <a href="#">Blind <i class="fa fa-low-vision h5 text-dark" style="font-size: 15px;"></i></a>
-                        <a href="#">Deaf <i class="fa fa-deaf h5 text-dark"></i></a>
-                        <a href="#">Dumb <i class="fa fa-volume-off h5 text-dark"></i></a>
+                        <a href="{% url 'blindPage' %}">Blind <i class="fa fa-low-vision h5 text-dark" style="font-size: 15px;"></i></a>
+                        <a href="{% url 'signVideo' %}">Deaf <i class="fa fa-deaf h5 text-dark"></i></a>
+                        <a href="{% url 'signVideo' %}">Dumb <i class="fa fa-volume-off h5 text-dark"></i></a>
                         <a href="#">Other <i class="bi bi-three-dots h5 text-dark"></i></a>
                     </div>
                 </div>
