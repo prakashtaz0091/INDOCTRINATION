@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-{% load static %}
-<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
- <link rel="stylesheet" type="text/css" href="css/video.css">
- <link rel="stylesheet" href="{% static 'app/css/nav-footer.css' %}">
- 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  {% load static %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/video.css">
+  <link rel="stylesheet" href="{% static 'app/css/nav-footer.css' %}">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
 
-    <title>Tutors</title>
-   </head>
+  <title>Tutors</title>
+</head>
+
 <body style="background-color:#171717;">
 
   <!-- navbar -->
@@ -46,267 +49,287 @@
 
   </section><br>
 
-<div class="container">
-<div class="input-group">
-  <select class="selectpicker" style="width: 20vw;">
-  <optgroup label="Primary-Level">
-    <option>Class-1</option>
-    <option>Class-2</option>
-    <option>Class-3</option>
-    <option>Class-4</option>
-    <option>Class-5</option>
- </optgroup>
-  <optgroup label="L-Secondary">
-    <option>Class-6</option>
-    <option>Class-7</option>
-     <option>Class-8</option>
+  <div class="container">
+    <div class="input-group">
+      <select class="selectpicker" style="width: 20vw;">
+        <optgroup label="Primary-Level">
+          <option>Class-1</option>
+          <option>Class-2</option>
+          <option>Class-3</option>
+          <option>Class-4</option>
+          <option>Class-5</option>
+        </optgroup>
+        <optgroup label="L-Secondary">
+          <option>Class-6</option>
+          <option>Class-7</option>
+          <option>Class-8</option>
 
-    </optgroup>
-   <optgroup label="H-Secondary">
-    <option>Class- XI</option>
-    <option>Class- XII</option>
-     </optgroup>
-   <optgroup label="Bachelor">
-        <option>BSc. Csit</option>
-        <option>BSc.</option>
-        <option>BBA</option>
-        <option>BCA</option>
-        <option>BSW</option>
-     </optgroup>
-</select>
+        </optgroup>
+        <optgroup label="H-Secondary">
+          <option>Class- XI</option>
+          <option>Class- XII</option>
+        </optgroup>
+        <optgroup label="Bachelor">
+          <option>BSc. Csit</option>
+          <option>BSc.</option>
+          <option>BBA</option>
+          <option>BCA</option>
+          <option>BSW</option>
+        </optgroup>
+      </select>
 
-  <input type="text" class="form-control" placeholder="Search for more...">
+      <input type="text" class="form-control" placeholder="Search for more...">
       <span class="input-group-btn">
         <button class="btn btn-outline-success btn-lg"><i class="fa fa-search fa-bg"></i> Search</button>
       </span>
-</div>
-</div><br>
-<div class="container">
-                   <div class="jumbotron">
-    <h1 class="text-success">Trending Live Sessons</h1>
     </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="content fourth-content">
-                           <div class="row">
-                         
-
-                          
-                                         <div class="col-md-4 project-item">
-                                          <div class="ok">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/b9CW0aJsGR4"  frameborder="0" allowfullscreen></iframe><br>
-                                                
-                                              </div>
-                                            </div><br>
-                                        </div>
-                                            
-
-
-                                     
-
-                                         <div class="col-md-4 project-item">
-                                          <div class="ok">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                 <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/ZvL4tuza9_k" frameborder="0" allowfullscreen></iframe><br>
-
-                                              </div>
-                                            </div><br>
-                                        </div>
-                                            
-
-                                       
-                                           <div class="col-md-4 project-item">
-                                          <div class="ok">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/l3ZtMWirOv8" frameborder="0" allowfullscreen></iframe><br>
-
-                                              </div>
-                                            </div><br>
-                                        </div>
-                                            
-
-
-
-                                          <div class="col-md-4 project-item">
-                                          <div class="ok">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/PcoLh3A2TGA" frameborder="0" allowfullscreen></iframe><br>
-                                                </div>
-                                            </div><br>
-                                        </div>
-                                            
-
-
-                                         <div class="col-md-4 project-item">
-                                          <div class="ok">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/gBpqT3IEIQU" frameborder="0" allowfullscreen></iframe><br>
-                                                  </div><br>
-                                            </div>
-                                        </div><br>
-
-                                        <div class="col-md-4 project-item">
-                                          <div class="ok">
-                                        <div class="embed-responsive embed-responsive-16by9">
-     <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/PZkEx5u7bwc" frameborder="0" allowfullscreen></iframe><br>
- </div>
-                                            </div><br>
-                                        </div>
-
-                                         </div>
-                                            
-                                         <div>
-                                <a href="#" class="btn btn-outline-danger btn-lg">More Videos &rarr;</a>
-                              </div>
-                          </div>
-                     </div>
-                    </div>
-                  </div>
-<br>
-<div class="border "></div><br>
-
-
-<div class="container">
-                   <div class="jumbotron">
-    <h1 class="text-success">Recent Uploads</h1>
+  </div><br>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="text-success">Trending Live Sessons</h1>
     </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="content fourth-content">
-                           <div class="row">
-                         
-
-                          
-                                         <div class="col-md-4 project-item">
-                                          <div class="ok">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/-XiTvbz_nIc" frameborder="0" allowfullscreen></iframe><br>
-                                                
-                                              </div>
-                                            </div><br>
-                                        </div>
-                                            
-
-
-                                     
-
-                                         <div class="col-md-4 project-item">
-                                          <div class="ok">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                 <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/Bnhdskn3dbA" frameborder="0" allowfullscreen></iframe><br>
-
-                                              </div>
-                                            </div><br>
-                                        </div>
-                                            
-
-                                       
-                                           <div class="col-md-4 project-item">
-                                          <div class="ok">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/P8OoLtebnsY"frameborder="0" allowfullscreen></iframe><br>
-
-                                              </div>
-                                            </div><br>
-                                        </div>
-                                            
-
-
-
-                                          <div class="col-md-4 project-item">
-                                          <div class="ok">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/CKwzOIsjQmI" frameborder="0" allowfullscreen></iframe><br>
-                                                </div>
-                                            </div><br>
-                                        </div>
-                                            
-
-
-                                         <div class="col-md-4 project-item">
-                                          <div class="ok">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/R39D9SnIwQA" frameborder="0" allowfullscreen></iframe><br>
-                                                  </div><br>
-                                            </div>
-                                        </div><br>
-
-                                        <div class="col-md-4 project-item">
-                                          <div class="ok">
-                                        <div class="embed-responsive embed-responsive-16by9">
-     <iframe class="pb-video-frame" width="100%" height="230"  src="https://www.youtube.com/embed/yD7b6R0-LQw" frameborder="0" allowfullscreen></iframe><br>
- </div>
-                                            </div><br>
-                                        </div>
-
-                                         </div>
-                                            
-                                         <div>
-                                <a href="#" class="btn btn-outline-danger btn-lg">More Videos &rarr;</a>
-                              </div>
-                          </div>
-                     </div>
-                    </div>
-                  </div>
-<br>
-<div class="border "></div><br>
-
-
-<!--footer-->
- <br><br><br><br><footer class="page_footer">
-      <div class="site-section">
-        <div class="container">
-
-          <div class="cta d-block d-md-flex align-items-center px-5">
-            <div>
-              <h2 class="mb-0">View Our Videos &uarr;</h2>
-              <h3 class="text-dark">Keep Learning &#128525; </h3>
-            </div>
-                     </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="content fourth-content">
           <div class="row">
 
-            <div class="col-sm">
-              <h1 class="footer-logo">INDOCTRINATION</h1>
-              
+
+
+            <div class="col-md-4 project-item">
+              <div class="ok">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="pb-video-frame" width="100%" height="230"
+                    src="https://www.youtube.com/embed/b9CW0aJsGR4" frameborder="0" allowfullscreen></iframe><br>
+
+                </div>
+              </div><br>
             </div>
-            <div class="col-sm">
-              <h3>Sources</h3>
-              <ul class="list-unstyled links">
-                <li><a href="#">Premium</a></li>
-                <li><a href="#">Standard</a></li>
-              </ul>
+
+
+
+
+
+            <div class="col-md-4 project-item">
+              <div class="ok">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="pb-video-frame" width="100%" height="230"
+                    src="https://www.youtube.com/embed/ZvL4tuza9_k" frameborder="0" allowfullscreen></iframe><br>
+
+                </div>
+              </div><br>
             </div>
-            <div class="col-sm">
-              <h3>Organization</h3>
-              <ul class="list-unstyled links">
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Contact us</a></li>
-              </ul>
+
+
+
+            <div class="col-md-4 project-item">
+              <div class="ok">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="pb-video-frame" width="100%" height="230"
+                    src="https://www.youtube.com/embed/l3ZtMWirOv8" frameborder="0" allowfullscreen></iframe><br>
+
+                </div>
+              </div><br>
             </div>
-            <div class="col-sm">
-              <h3>Further Information</h3>
-              <ul class="list-unstyled links">
-                <li><a href="#">Terms &amp; Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-              </ul>
+
+
+
+
+            <div class="col-md-4 project-item">
+              <div class="ok">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="pb-video-frame" width="100%" height="230"
+                    src="https://www.youtube.com/embed/PcoLh3A2TGA" frameborder="0" allowfullscreen></iframe><br>
+                </div>
+              </div><br>
             </div>
-            <div class="col-md-3">
-              <h3>Follow us</h3>
-              <ul class="list-unstyled social">
-                <li><a href="#" style="background-color:blue;"><span class="fa fa-facebook fa-2x text-white"></span></a></li>
-                <li><a href="#"style="background-color:white;"><span class="fa fa-twitter fa-2x text-primary"></span></a></li>
-                <li><a href="#"style="background-color:orangered;"><span class="fa fa-google-plus fa-2x text-white"></span></a></li>
-                <li><a href="#"style="background-color:white;"><span class="fa fa-github fa-2x text-dark"></span></a></li>
-              </ul>
+
+
+
+            <div class="col-md-4 project-item">
+              <div class="ok">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="pb-video-frame" width="100%" height="230"
+                    src="https://www.youtube.com/embed/gBpqT3IEIQU" frameborder="0" allowfullscreen></iframe><br>
+                </div><br>
+              </div>
+            </div><br>
+
+            <div class="col-md-4 project-item">
+              <div class="ok">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="pb-video-frame" width="100%" height="230"
+                    src="https://www.youtube.com/embed/PZkEx5u7bwc" frameborder="0" allowfullscreen></iframe><br>
+                </div>
+              </div><br>
             </div>
-            
+
+          </div>
+
+          <div>
+            <a href="#" class="btn btn-outline-danger btn-lg">More Videos &rarr;</a>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </div>
+  <br>
+  <div class="border "></div><br>
 
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="text-success">Recent Uploads</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="content fourth-content">
+          <div class="row">
+
+
+
+            <div class="col-md-4 project-item">
+              <div class="ok">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="pb-video-frame" width="100%" height="230"
+                    src="https://www.youtube.com/embed/-XiTvbz_nIc" frameborder="0" allowfullscreen></iframe><br>
+
+                </div>
+              </div><br>
+            </div>
+
+
+
+
+
+            <div class="col-md-4 project-item">
+              <div class="ok">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="pb-video-frame" width="100%" height="230"
+                    src="https://www.youtube.com/embed/Bnhdskn3dbA" frameborder="0" allowfullscreen></iframe><br>
+
+                </div>
+              </div><br>
+            </div>
+
+
+
+            <div class="col-md-4 project-item">
+              <div class="ok">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="pb-video-frame" width="100%" height="230"
+                    src="https://www.youtube.com/embed/P8OoLtebnsY" frameborder="0" allowfullscreen></iframe><br>
+
+                </div>
+              </div><br>
+            </div>
+
+
+
+
+            <div class="col-md-4 project-item">
+              <div class="ok">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="pb-video-frame" width="100%" height="230"
+                    src="https://www.youtube.com/embed/CKwzOIsjQmI" frameborder="0" allowfullscreen></iframe><br>
+                </div>
+              </div><br>
+            </div>
+
+
+
+            <div class="col-md-4 project-item">
+              <div class="ok">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="pb-video-frame" width="100%" height="230"
+                    src="https://www.youtube.com/embed/R39D9SnIwQA" frameborder="0" allowfullscreen></iframe><br>
+                </div><br>
+              </div>
+            </div><br>
+
+            <div class="col-md-4 project-item">
+              <div class="ok">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="pb-video-frame" width="100%" height="230"
+                    src="https://www.youtube.com/embed/yD7b6R0-LQw" frameborder="0" allowfullscreen></iframe><br>
+                </div>
+              </div><br>
+            </div>
+
+          </div>
+
+          <div>
+            <a href="#" class="btn btn-outline-danger btn-lg">More Videos &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="border "></div><br>
+
+
+  <!--footer-->
+  <br><br><br><br>
+  <footer class="page_footer">
+    <div class="site-section">
+      <div class="container">
+
+        <div class="cta d-block d-md-flex align-items-center px-5">
+          <div>
+            <h2 class="mb-0">View Our Videos &uarr;</h2>
+            <h3 class="text-dark">Keep Learning &#128525; </h3>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-sm">
+            <h1 class="footer-logo">INDOCTRINATION</h1>
+
+          </div>
+          <div class="col-sm">
+            <h3>Sources</h3>
+            <ul class="list-unstyled links">
+              <li><a href="#">Premium</a></li>
+              <li><a href="#">Standard</a></li>
+            </ul>
+          </div>
+          <div class="col-sm">
+            <h3>Organization</h3>
+            <ul class="list-unstyled links">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="col-sm">
+            <h3>Further Information</h3>
+            <ul class="list-unstyled links">
+              <li><a href="#">Terms &amp; Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3>Follow us</h3>
+            <ul class="list-unstyled social">
+              <li><a href="#" style="background-color:blue;"><span class="fa fa-facebook fa-2x text-white"></span></a>
+              </li>
+              <li><a href="#" style="background-color:white;"><span class="fa fa-twitter fa-2x text-primary"></span></a>
+              </li>
+              <li><a href="#" style="background-color:orangered;"><span
+                    class="fa fa-google-plus fa-2x text-white"></span></a></li>
+              <li><a href="#" style="background-color:white;"><span class="fa fa-github fa-2x text-dark"></span></a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
