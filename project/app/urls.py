@@ -19,5 +19,6 @@ urlpatterns = [
     path('contact/',views.contact,name='contact'),
     path('signvideo/',views.signVideo,name='signVideo'),
     path('signimage/',views.signImage,name='signImage'),
+    path('blindpage/',views.blindPage, name='blindPage'),
 
 ]

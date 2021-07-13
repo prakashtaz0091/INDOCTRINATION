@@ -102,7 +102,7 @@ async def home(request):
     blind = await is_blind(request)
     print(blind)
     if blind:
-        asyncio.create_task(blindnav())
+        return redirect(blindPage)
 
     # a_listenChoice = sync_to_async(listenChoice)
     # task = asyncio.create_task(a_listenChoice(request))
@@ -270,3 +270,7 @@ def signVideo(request):
 
 def signImage(request):
     return render(request,'signphoto.html')
+
+
+def blindPage(request):
+    return render(request,'blindpage.html')
