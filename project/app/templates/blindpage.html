@@ -7,29 +7,40 @@
 
 {% block content %}
 
-    <audio autoplay><source src="/media/mainaudio.mp3"></audio>
+    <audio autoplay><source src="/media/playaudio.mp3"></audio>
 
     <script type="text/javascript">
 
         window.addEventListener('keydown', function (e) {
-          if (e.key == 1) {
-            window.location.replace("{% url 'home' %}");
+          if (e.key == 'a') {
+            var audio = new Audio('/media/demo1.mp3')
+            audio.play();
+        }
+        if (e.key == 'b') {
+            var audio = new Audio('/media/demo2.mp3')
+            audio.play();
+        }
+        if (e.key == 'c') {
+            var audio = new Audio('/media/demo1.mp3')
+            audio.play();
+        }
+        if (e.key == 'd') {
+            var audio = new Audio('/media/demo1.mp3')
+            audio.play();
+        }
+        if (e.key == 'e') {
+            var audio = new Audio('/media/demo1.mp3')
+            audio.play();
+        }
+        if (e.key == 'f') {
+            var audio = new Audio('/media/demo1.mp3')
+            audio.play();
           }
-          if (e.key == 2) {
-            window.location.replace("{% url 'courses' %}");
+          if (e.key == 'g') {
+            window.location.replace("{% url 'liveTutors' %}")
           }
-          if (e.key == 3) {
-            window.location.replace("{% url 'blogPage' %}");
-          }
-          if (e.key == 4) {
-            window.location.replace("{% url 'liveTutors' %}");
-          }
-          if (e.key == 5) {
-            window.location.replace("{% url 'home' %}");
-          }
-          if (e.key == 6) {
-            window.location.replace("{% url 'contact' %}");
-          }
+    
+          
         }, false);
       </script>
   
@@ -41,7 +52,15 @@
             <h1 class="text-success py-5 ml-5">Audio Tutoring</h1>
             <hr>
             <div class="container-fluid text-warning">
-                <li></li>
+                <li><h2>Audio 1</h2></li>
+                <li><h2>Audio 1</h2></li>
+                <li><h2>Audio 1</h2></li>
+                <li><h2>Audio 1</h2></li>
+                <li><h2>Audio 1</h2></li>
+                <li><h2>Audio 1</h2></li>
+                <li><h2>Audio 1</h2></li>
+                <li><h2>Audio 1</h2></li>
+                <li><h2>Audio 1</h2></li>
             </div>
         </div>
 
