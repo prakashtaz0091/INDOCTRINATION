@@ -17,5 +17,7 @@ urlpatterns = [
     path('live_tutors/',views.live_tutors,name='liveTutors'),
     path('blogPage/',views.blogPage,name='blogPage'),
     path('contact/',views.contact,name='contact'),
+    path('signvideo/',views.signVideo,name='signVideo'),
+    path('signimage/',views.signImage,name='signImage'),
 
 ]

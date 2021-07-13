@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="shortcut icon" href="{% static 'favicon.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'app/css/nav-footer.css' %}">
+    <link rel="stylesheet" href="{% static 'app/css/signstyle.css' %}">
+ 
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <!---Custom css-->
+    <link rel="stylesheet" href="css/signstyle.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body style="background-color:#171717;">
+    <section style="color: #fff;">
+        <nav class="blend">
+            <ul>
+                <a href="#"><img src="{% static 'app/images/incoc.png' %}" class="ima" title="INDOCTRINATION"></a>
+    
+                <li><i class="fa fa-home fa-2x text-dark"></i><a href="">Home</a></li>
+                <li><i class="fa fa-file-pdf-o fa-2x text-dark"></i><a href="{% url 'courses' %}">Courses</a></li>
+                <li><i class="fa fa-rss fa-2x text-dark"></i><a href="{% url 'blogPage' %}">News Blog</a></li>
+                <li><i class="fa fa-server fa-2x text-dark"></i><a href="{% url 'liveTutors' %}">Live Tutors</a></li>
+                <li>
+                    <div class="dropdown"><i class="fa fa-wheelchair-alt fa-2x text-dark"></i>
+                        <a class="dropbtn">Disabled ?? &darr;</a>
+                        <div class="dropdown-content">
+                            <a href="#">Blind <i class="fa fa-low-vision h5 text-dark" style="font-size: 15px;"></i></a>
+                            <a href="{% url 'signVideo' %}">Deaf <i class="fa fa-deaf h5 text-dark"></i></a>
+                            <a href="{% url 'signVideo' %}">Dumb <i class="fa fa-volume-off h5 text-dark"></i></a>
+                            <a href="#">Other <i class="bi bi-three-dots h5 text-dark"></i></a>
+                        </div>
+                    </div>
+                </li>
+    
+                <li><i class="fa fa-users fa-2x text-dark"></i><a href="#">About</a></li>
+                <li><i class="fa fa-phone fa-2x text-dark"></i><a href="{% url 'contact' %}">Contact-Us</a></li>
+                <li><i class="fa fa-user fa-2x text-dark"></i><a href="{% url 'profile' %}">Profile</a></li>
+            </ul>
+        </nav>
+    
+    </section><br>
+    <input type="radio" name="photos" id="check1">
+    <input type="radio" name="photos" id="check2">
+    <input type="radio" name="photos" id="check3">
+    <input type="radio" name="photos" id="check4">
+
+    <div class="container">
+        <h1 style="color:#5cb85c;">Our Sign Language Tutoring</h1>
+        <div class="top-content">
+            <h3>Sign Language</h3>
+            <label for="check1">AllPhotos</label>
+            <label for="check2">ASL</label>
+            <label for="check3">Gestures</label>
+            <label for="check4">Expressions</label>
+            <a href="{% url 'signVideo' %}" style="text-decoration:none; border-bottom: none;"><h3>View Video Tutoring &rarr;</h3></a>
+        </div>
+        <div class="photo-gallery">
+            <div class="pic exp">
+                <img src="{% static 'app/images/exp5.jpg' %}">
+            </div>
+            <div class="pic ASL">
+                <img src="{% static 'app/images/ily.jpg' %}">
+            </div>
+            <div class="pic gestures">
+                <img src="{% static 'app/images/gesture1.jpg' %}">
+            </div>
+            <div class="pic exp">
+                <img src="{% static 'app/images/exp3.jpg' %}">
+            </div>
+            <div class="pic gestures">
+                <img src="{% static 'app/images/gesture2.png' %}">
+            </div>
+            <div class="pic ASL">
+                <img src="{% static 'app/images/aslphabets.jpg' %}">
+            </div>
+            <div class="pic gestures">
+                <img src="{% static 'app/images/gesture4.jpg' %}">
+            </div>
+            <div class="pic ASL">
+                <img src="{% static 'app/images/aslnum.jpg' %}">
+            </div>
+            <div class="pic exp">
+                <img src="{% static 'app/images/exp2.png' %}">
+            </div>
+            <div class="pic gestures">
+                <img src="{% static 'app/images/gesture3.jpg' %}">
+            </div>
+        
+            <div class="pic exp">
+                <img src="{% static 'app/images/exp1.png' %}">
+            </div>
+            <div class="pic ASL">
+                <img src="{% static 'app/images/aslfood.jpg' %}">
+            </div>
+             <div class="pic ASL">
+                <img src="{% static 'app/images/aslfood.jpg' %}">
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

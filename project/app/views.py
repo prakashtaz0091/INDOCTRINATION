@@ -22,7 +22,7 @@ from gtts import gTTS
 
 def welcome(name):  # for welcome speech
     # print('inside welcome')
-    text = f" Indoctrination maa hajurlai swagat chha, {name}!.  Ma hajurlai k sahayog garna sakchhu ?"
+    text = f" Indoctrination maa hajurlai swagat chha, {name}!  Ma hajurlai k sahayog garna sakchhu ?"
     voice = gTTS(text=text, lang='hi',slow=False)
     voice.save("welcome.mp3")  # saves voice as welcome.mp3
     os.system("mpg321 welcome.mp3")  # plays that mp3 file
@@ -264,3 +264,9 @@ def contact(request):
     return render(request,'contact.html')
 
 
+def signVideo(request):
+    return render(request,'signvideo.html')
+
+
+def signImage(request):
+    return render(request,'signphoto.html')

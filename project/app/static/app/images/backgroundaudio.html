@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Demo</title>
+</head>
+
+<body>
+  <audio autoplay loop>
+    <source src="videos/mainaudio.ogg" type="audio/ogg">
+    <source src="videos/mainaudio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  Hello
+
+  <script type="text/javascript">
+
+    window.addEventListener('keydown', function (e) {
+      if (e.key == 1) {
+        window.location.replace("hackathone.html");
+      }
+      if (e.key == 2) {
+        window.location.replace("course.html");
+      }
+      if (e.key == 3) {
+        window.location.replace("blogpage.html");
+      }
+      if (e.key == 4) {
+        window.location.replace("live_video.html");
+      }
+      if (e.key == 5) {
+        window.location.replace("aboutus.html");
+      }
+      if (e.key == 6) {
+        window.location.replace("contact.html");
+      }
+    }, false);
+  </script>
+</body>
+
+</html>
