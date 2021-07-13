@@ -6,6 +6,32 @@
 
 
 {% block content %}
+
+    <audio autoplay><source src="/media/mainaudio.mp3"></audio>
+
+    <script type="text/javascript">
+
+        window.addEventListener('keydown', function (e) {
+          if (e.key == 1) {
+            window.location.replace("{% url 'home' %}");
+          }
+          if (e.key == 2) {
+            window.location.replace("{% url 'courses' %}");
+          }
+          if (e.key == 3) {
+            window.location.replace("{% url 'blogPage' %}");
+          }
+          if (e.key == 4) {
+            window.location.replace("{% url 'liveTutors' %}");
+          }
+          if (e.key == 5) {
+            window.location.replace("{% url 'home' %}");
+          }
+          if (e.key == 6) {
+            window.location.replace("{% url 'contact' %}");
+          }
+        }, false);
+      </script>
   
     <div class="container-fluid bg-dark text-white pb-5" style="min-height: 100vh;">
         <h1 class="text-center py-5" style="text-decoration-line: underline;">Visually Disabled Section</h1>
@@ -14,6 +40,9 @@
         <div class="container bg-white rounded " style="min-height: 90vh;">
             <h1 class="text-success py-5 ml-5">Audio Tutoring</h1>
             <hr>
+            <div class="container-fluid text-warning">
+                <li></li>
+            </div>
         </div>
 
     </div>
