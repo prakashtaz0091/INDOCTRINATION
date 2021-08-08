@@ -12,14 +12,15 @@ Profile
         <div class="col-md-8" style="min-height: 100vh;">
             <div class="container text-success py-5 my-5 border rounded">
                 <div class="container">
-                    <img src="{% static 'app/images/user.png' %}" class="float-right mt-0 rounded-circle img-responsive" alt="User">
-                    
+                    <img src="{% static 'app/images/user.png' %}" class="float-right mt-0 rounded-circle img-responsive"
+                        alt="User">
+
                 </div>
-                
+
                 <h1>Hey, {{name}} Welcome</h1>
 
-            <hr>
-
+                <hr>
+                hello
                 {% if userinfo == True %}
                 <div class="container-fluid ">
                     <h3>Name : {{name}}</h3>
